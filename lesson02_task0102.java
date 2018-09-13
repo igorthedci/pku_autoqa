@@ -6,9 +6,6 @@
 Создать метод, который будет сортировать указанный массив по возрастанию любым известным вам способом.
 **/
 
-import java.util.ArrayList;
-import java.util.Date;
-
 public class Main {
 
     // display an array
