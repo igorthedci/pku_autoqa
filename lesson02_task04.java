@@ -43,7 +43,7 @@ public class BankAccount {
     // debit
     public void debit(double subValue) {
         if (subValue > this._balance) {
-            System.out.println("Сумма снятия больше чем остаок на счету!");
+            System.out.println("Сумма снятия больше чем остаток на счету!");
             return;
         }
         this._balance -= subValue;
