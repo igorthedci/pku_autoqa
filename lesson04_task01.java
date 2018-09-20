@@ -8,15 +8,21 @@
 public class MainPage {
 
     String xlocatorReturnToHome = "//i[@class='icon-home']";
+    String сlocatorReturnToHome = "#header_logo > a > img";
 
 //  YOUR PERSONAL INFORMATION section
 
     String xlocatorRadioButtonMr = "//div[@id='uniform-id_gender1']";
+    String clocatorRadioButtonMr = "#id_gender1";
 
     String xlocatorRadioButtonMrs = "//div[@id='uniform-id_gender2']";
+    String clocatorRadioButtonMrs = "#id_gender2";
 
     String xlocatorFirstNameLabel = "//label[@for='customer_firstname']";
     String xlocatorFirstNameInput = "//input[@id='customer_firstname']";
+    String clocatorFirstNameLabel = "label[for='customer_firstname']";
+    String clocatorFirstNameInput = "#customer_firstname";
+
 
     String xlocatorEmailLabel = "//label[@for='email']";
     String xlocatorEmailInput = "//input[@id='email']";
@@ -66,5 +72,52 @@ public class MainPage {
 
     String xlocatorRegisterButtonLabel = "//button[@id='submitAccount']/span";
     String xlocatorRegisterButtonInput = "//button[@id='submitAccount']";
+
+// BOTTOM BLOCK
+
+    String clocatorNewsletterLabel = "#newsletter_block_left > h4";
+    String clocatorNewsletterInput = "#newsletter-input";
+    String clocatorButtonSubmit = "button[name='submitNewsletter']";
+
+    String clocatorFollowLabel = "#social_block > h4";
+    String clocatorFollowFacebookLogo = "#social_block > ul > li.facebook > a";
+    String clocatorFollowFacebookLink = "#social_block > ul > li.facebook > a";
+
+    String clocatorFollowTwitterLogo = "";
+    String clocatorFollowTwitterLink = "#social_block > ul > li.twitter > a";
+
+    String clocatorFollowYoutubeLogo = "";
+    String clocatorFollowYoutubeLink = "#social_block > ul > li.youtube > a";
+
+    String clocatorFollowGoogleplusLogo = "";
+    String clocatorFollowGoogleplusLink = "#social_block > ul > li.google-plus";
+
+    String clocatorCategoriesLabel = "section[class*='categories'] > h4";
+    String clocatorCategoryWomenLabel = "section[class*='categories'] a";
+
+    String clocatorInformationLabel = "section[id*='links'] > h4";
+//    String clocatorInformationSpecials = "section[id*='links'] a[title='Specials']";
+    String clocatorInformationSpecials = "a[title='Specials']";
+    String clocatorInformationNewProducts = "a[title='New products']";
+    String clocatorInformationBestSellers = "a[title='Best sellers']";
+    String clocatorInformationOurStores = "a[title='Our stores']";
+    String clocatorInformationContactUs = "a[title='Contact us']";
+    String clocatorInformationTerms = "a[title*='Terms']";
+    String clocatorInformationAboutUs = "a[title='About us']";
+    String clocatorInformationSitemap = "a[title='Sitemap']";
+
+    String clocatorMyAccountLabel = "section h4 a[title*='Manage']";
+    //    String clocatorInformationSpecials = "section[id*='links'] a[title='Specials']";
+    String clocatorMyAccountMyOrders = "a[href*='history']";
+    String clocatorMyAccountMyCreditSlips = "a[href*='order-slip']";
+    String clocatorMyAccountMyAddresses = "a[href*='addresses']";
+    String clocatorMyAccountMyPersonalInfo = "a[href*='identity']";
+
+    String clocatorStoreInformation = "section[id*='contact_infos'] h4";
+    String clocatorMyAccountStoreMap = "section[id*='contact_infos'] i[class*='map']";
+    String clocatorMyAccountStorePhone = "section[id*='contact_infos'] i[class*='phone']";
+    String clocatorMyAccountStoreEmail = "section[id*='contact_infos'] i[class*='envelope']";
+
+    String clocatorBottomFooter = "section.bottom-footer a";
 
 }
