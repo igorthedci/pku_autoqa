@@ -27,7 +27,7 @@ public class verifyCreateAccount {
 
     @After
     public void stop() {
-       // driver.close();
+       driver.close();
     }
 
     @Test
