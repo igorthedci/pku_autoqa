@@ -8,9 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 public class verifyCreateAccount {
 
-
     private static WebDriver driver;
-
 
     @BeforeClass
     public static void initClass() {
@@ -34,8 +32,6 @@ public class verifyCreateAccount {
     public void openSigninPage() {
 
         pressSigninButton();
-        // WebElement buttonSignin = submitSearch(driver, By.xpath("//a[contains(text(),'Sign in')]"));
-        // buttonSignin.click();
         WebElement inputCreateEmail = submitSearch(driver, By.id("email_create"));
 
         Assert.assertTrue(inputCreateEmail.isDisplayed());
@@ -45,15 +41,8 @@ public class verifyCreateAccount {
     public void openCreateAccountPage() {
 
         pressSigninButton();
-        //WebElement buttonSignin = submitSearch(driver, By.xpath("//a[contains(text(),'Sign in')]"));
-        //buttonSignin.click();
         typeEmailAccount("qq@qq.qq");
-        //WebElement inputCreateEmail = submitSearch(driver, By.id("email_create"));
-        //inputCreateEmail.sendKeys("qq@qq.qq");
-        //inputCreateEmail.submit();
         pressCreateAccountButton();
-        //WebElement buttonCreateAccount = submitSearch(driver, By.id("SubmitCreate"));
-        //buttonCreateAccount.click();
 
         WebElement divCreateAccount = submitSearch(driver, By.xpath("//h3[text()='Create an account']"));
         Assert.assertTrue(divCreateAccount.isDisplayed());
